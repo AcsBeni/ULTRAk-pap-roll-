@@ -1,0 +1,23 @@
+#kep{
+    display: block;
+    margin: 0 auto;
+}
+table{
+    margin: 0 auto;
+    align-items: center;
+    width: 50%;
+}
+h1{
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+p{
+    text-align: center;
+}
+body{
+    background-color: rgb(202, 202, 202);
+    width: 60%;
+    margin: 0 auto;
+}
