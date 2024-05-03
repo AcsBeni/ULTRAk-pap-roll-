@@ -20,4 +20,17 @@ body{
     background-color: rgb(202, 202, 202);
     width: 60%;
     margin: 0 auto;
+
 }
+
+#robotkep{
+    height: 150px;
+    width: 200px;
+    display: block;
+    margin:  0 auto;
+    background-image: url(./varoimg.jpg);
+    background-repeat: no-repeat ;
+    background-size: cover;
+    
+}
+
