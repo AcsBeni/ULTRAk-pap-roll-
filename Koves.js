@@ -15,6 +15,8 @@ let botkepe = document.getElementById("robotkep")
 let botpontja = document.getElementById("geppont")
 let emberpontja = document.getElementById("tepont")
 
+let nyertes = document.getElementById("szoveg")
+
 let emberpont = 0
 let botpont = 0
 
@@ -82,22 +84,54 @@ function robotvalasztas(){
 function harc(){
     if(Koember == true && ollobot ==true){
         emberpont++;
+        emberpontja.innerHTML = emberpont
+        nyertes.innerHTML = "Nyertél"
         
     }
     else if(Koember == true && papirbot ==true){
         botpont++;
+        botpontja.innerHTML = botpont
+        nyertes.innerHTML = "Vesztítettél"
+    }
+
+    else if(Olloember == true && papirbot ==true){
+        emberpont++;
+        emberpontja.innerHTML = emberpont
+        nyertes.innerHTML = "Nyertél"
+    }
+    else if(ollobot == true && Papirember ==true){
+        botpont++;
+        botpontja.innerHTML = botpont
+        nyertes.innerHTML = "Vesztítettél"
+    }
+
+    else if(kobot == true && Olloember ==true){
+        botpont++;
+        botpontja.innerHTML = botpont
+        nyertes.innerHTML = "Vesztítettél"
+    }
+    else if(kobot == true && Papirember ==true){
+        emberpont++;
+        emberpontja.innerHTML = emberpont
+        nyertes.innerHTML = "Nyertél"
         
     }
-    else if(Koember == true && papirbot ==true){
-        botpont++;
+       
+    
+
+    
+    
+
+    else if(Koember == true && kobot ==true){
+        nyertes.innerHTML = "Döntetlen"
         
     }
-    else if(Koember == true && papirbot ==true){
-        botpont++;
+    else if(Papirember == true && papirbot ==true){
+        nyertes.innerHTML = "Döntetlen"
         
     }
-    else if(Koember == true && papirbot ==true){
-        botpont++;
+    else if(Olloember == true && ollobot ==true){
+        nyertes.innerHTML = "Döntetlen"
         
     }
 }
